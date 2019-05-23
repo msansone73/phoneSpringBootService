@@ -37,7 +37,7 @@ public class PhoneSpringBootServiceApplicationTests {
 	@Test
 	public void validateCountryTestSuccess(){
 
-		List<CustomerDTO> customers = customerService.ListAllCustumer();
+		List<CustomerDTO> customers = customerService.ListAllCustomer();
 		CustomerDTO customer =customers.get(4);
 		Assert.assertEquals(customer.getCountry(),"Morocco");
 

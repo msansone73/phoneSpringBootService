@@ -2,7 +2,6 @@ package br.com.msansone.test.phoneSpringBootService.dto;
 
 import br.com.msansone.test.phoneSpringBootService.business.CountryBusiness;
 import br.com.msansone.test.phoneSpringBootService.dao.Customer;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class CustomerDTO extends Customer {
 

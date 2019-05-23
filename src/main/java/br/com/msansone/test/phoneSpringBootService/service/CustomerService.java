@@ -8,5 +8,6 @@ import java.util.List;
 public interface CustomerService {
 
 
-    List<CustomerDTO> ListAllCustumer() throws CustomerException;
+    List<CustomerDTO> ListAllCustomer() throws CustomerException;
+    List<CustomerDTO> ListAllCustomerByCountry(String country) throws CustomerException;
 }
