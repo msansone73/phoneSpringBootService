@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java" line="21" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="678e1d56-f86f-43ac-86f5-d4e74ca76dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java" afterDir="false" />
     </list>
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#507#508#0" expanded="true" />
@@ -67,11 +66,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerEmptyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="165">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
@@ -85,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,10 +112,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="393">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +143,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,11 +161,13 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dao/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerEmptyException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java" />
       </list>
     </option>
   </component>
@@ -148,7 +181,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="23" />
-    <option name="width" value="1461" />
+    <option name="width" value="1632" />
     <option name="height" value="949" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -248,6 +281,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="phoneSpringBootService" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoneSpringBootService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phoneSpringBootService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoneSpringBootService" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phoneSpringBootService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phoneSpringBootService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoneSpringBootService" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,7 +385,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1461" height="949" extended-state="0" />
+    <frame x="1" y="23" width="1632" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -342,16 +393,16 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" sideWeight="0.24912892" side_tool="true" weight="0.3326286" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75087106" visible="true" weight="0.3326286" />
-      <window_info id="Structure" order="1" sideWeight="0.24912892" side_tool="true" visible="true" weight="0.3326286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7513043" visible="true" weight="0.29685536" />
+      <window_info id="Structure" order="1" sideWeight="0.24869566" side_tool="true" visible="true" weight="0.29685536" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32906976" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32905483" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32905483" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906976" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3302217" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3302217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,38 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-118">
@@ -493,10 +512,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/dto/CustomerDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#507#508#0" expanded="true" />
@@ -505,15 +537,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/enums/PhoneType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="30">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/exceptions/CustomerEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/service/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

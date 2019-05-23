@@ -2,10 +2,12 @@ package br.com.msansone.test.phoneSpringBootService.service;
 
 import br.com.msansone.test.phoneSpringBootService.dao.Customer;
 import br.com.msansone.test.phoneSpringBootService.dto.CustomerDTO;
+import br.com.msansone.test.phoneSpringBootService.exceptions.CustomerException;
 import br.com.msansone.test.phoneSpringBootService.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -17,14 +19,19 @@ public class CustomerServiceImpl implements CustomerService {
     CustomerRepository customerRepository;
 
     @Override
-    public List<CustomerDTO> ListAllCustumer() {
+    public List<CustomerDTO> ListAllCustumer() throws CustomerException{
 
-        Iterable<Customer> saida=customerRepository.findAll();
+        try{
+            Iterable<Customer> saida=customerRepository.findAll();
 
-        List<CustomerDTO> customers = StreamSupport.stream(saida.spliterator(), false)
-                .map(c-> new CustomerDTO(c))
-                .collect(Collectors.toList());
+            List<CustomerDTO> customers = StreamSupport.stream(saida.spliterator(), false)
+                    .map(c-> new CustomerDTO(c))
+                    .collect(Collectors.toList());
 
-        return customers;
+            return customers;
+        } catch (Exception ex){
+            throw new CustomerException();
+        }
+
     }
 }
