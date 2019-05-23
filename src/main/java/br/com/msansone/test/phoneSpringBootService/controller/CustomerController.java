@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Phones")
+@RequestMapping("/phones")
 public class CustomerController {
 
     @Autowired
@@ -19,11 +19,30 @@ public class CustomerController {
     public List<CustomerDTO> getAllCustomer(){
         return  customerService.ListAllCustomer();
     }
-    
+
     @CrossOrigin
     @GetMapping("/country/{country}")
     public List<CustomerDTO> getAllCustomerByCountry(@PathVariable String country){
         return  customerService.ListAllCustomerByCountry(country);
     }
+
+    @CrossOrigin
+    @GetMapping("/phone/{phone}")
+    public List<CustomerDTO> getAllCustomerByPhone(@PathVariable String phone){
+        return  customerService.ListCustomerByPhone(phone);
+    }
+
+    @CrossOrigin
+    @GetMapping("/name/{name}")
+    public List<CustomerDTO> getAllCustomerByName(@PathVariable String name){
+        return  customerService.ListCustomerByName(name);
+    }
+
+    @CrossOrigin
+    @GetMapping("/valid/{valid}")
+    public List<CustomerDTO> getAllCustomerByValid(@PathVariable Boolean valid){
+        return  customerService.ListCustomerByValid(valid);
+    }
+
 
 }

@@ -4,10 +4,12 @@ class Body extends Component{
 
     state = {
         customers: []
+        ,textbox:''
+        ,searchOption:'country'
     }
 
     componentDidMount(){
-        axios.get('http://192.168.1.70:8080/Phones/')
+        axios.get('http://192.168.1.70:8080/phones/')
         .then(res=>{
             const customers = res.data
             this.setState({ customers })
@@ -15,27 +17,52 @@ class Body extends Component{
     }
 
     searchByCountry=(e)=>{
-        axios.get('http://192.168.1.70:8080/Phones/country/Morocco/')
+
+        if (e.target.value==='clean'){
+        this.setState({textbox:''})
+        this.componentDidMount()
+        }
+        else{
+        axios.get('http://192.168.1.70:8080/phones/'+e.target.value+'/'+this.state.textbox+'/')
         .then(res=>{
-            const customers = res.data
             this.setState({ customers:res.data })
-        })       
+        })   
+    }    
     }
 
-    
+    changeTextBox=(e)=>{
+        this.setState({textbox:e.target.value})
 
+    }
 
     render(){
         return(
             <div>
                 <table>
+                    <tbody>
                     <tr>
-                        <td>Country 
-                            <input></input> 
-                            <button onClick={this.searchByCountry}> pesquisar</button>
+                        <td>Search: 
+                            <input value={this.state.textbox}
+                            onChange={this.changeTextBox}></input> 
+                            
                             </td>
                     </tr>
+                    </tbody>
                 </table>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td> 
+                            <button value='country' onClick={this.searchByCountry}> by Country</button>
+                            <button value='name' onClick={this.searchByCountry}> by Name</button>
+                            <button value='phone' onClick={this.searchByCountry}> by Phone</button>
+                            <button value='clean' onClick={this.searchByCountry}> Clean</button>
+                            </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br></br>
+
                 <table>
                 <thead>
                     <tr>
@@ -48,14 +75,15 @@ class Body extends Component{
                 <tbody>
                     {
                         this.state.customers.map(customer => 
-                            <tr key={customer.id}>
-                            <td>{customer.id}</td>
-                            <td>{customer.name}</td>
-                            <td>{customer.phone}</td>
-                            <td>{customer.country}</td>
-                            </tr>)
+                            
+                                <tr key={customer.id}>
+                                    <td>{customer.id}</td>
+                                    <td>{customer.name}</td>
+                                    <td>{customer.phone}</td>
+                                    <td>{customer.country}</td>
+                                </tr>
+                            )
                     }
-
                 </tbody>
                 <tfoot>
                     <tr>
