@@ -1,7 +1,5 @@
 package br.com.msansone.test.phoneSpringBootService.controller;
 
-
-import br.com.msansone.test.phoneSpringBootService.dao.Customer;
 import br.com.msansone.test.phoneSpringBootService.dto.CustomerDTO;
 import br.com.msansone.test.phoneSpringBootService.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;

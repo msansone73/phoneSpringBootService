@@ -6,8 +6,6 @@ import br.com.msansone.test.phoneSpringBootService.exceptions.CustomerException;
 import br.com.msansone.test.phoneSpringBootService.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -17,6 +15,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
+
 
     @Override
     public List<CustomerDTO> ListAllCustumer() throws CustomerException{
