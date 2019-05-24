@@ -9,7 +9,7 @@ class Body extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://192.168.1.70:8080/phones/')
+        axios.get('http://localhost:8080/phones/')
         .then(res=>{
             const customers = res.data
             this.setState({ customers })
@@ -23,7 +23,7 @@ class Body extends Component{
         this.componentDidMount()
         }
         else{
-        axios.get('http://192.168.1.70:8080/phones/'+e.target.value+'/'+this.state.textbox+'/')
+        axios.get('http://localhost:8080/phones/'+e.target.value+'/'+this.state.textbox+'/')
         .then(res=>{
             this.setState({ customers:res.data })
         })   
