@@ -5,9 +5,6 @@ import br.com.msansone.test.phoneSpringBootService.dao.Customer;
 
 public class CustomerDTO extends Customer {
 
-
-    private String country;
-
     public CustomerDTO(Customer customer) {
         this.internalSettings(customer);
     }

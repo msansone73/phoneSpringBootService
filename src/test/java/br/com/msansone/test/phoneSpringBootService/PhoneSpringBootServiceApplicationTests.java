@@ -31,7 +31,7 @@ public class PhoneSpringBootServiceApplicationTests {
 	@Test
 	public void dataBaseDataTestSucess(){
 		Customer customer = customerRepository.findById((long) 1).get();
-		Assert.assertEquals(customer.getName(),"Yosaf Karrouch");
+		Assert.assertEquals("Yosaf Karrouch",customer.getName());
 	}
 
 	@Test
@@ -39,7 +39,32 @@ public class PhoneSpringBootServiceApplicationTests {
 
 		List<CustomerDTO> customers = customerService.ListAllCustomer();
 		CustomerDTO customer =customers.get(4);
-		Assert.assertEquals(customer.getCountry(),"Morocco");
+		Assert.assertEquals("Morocco", customer.getCountry());
+	}
 
+	@Test
+	public void validateNameTestSucess(){
+		List<CustomerDTO> customers= customerService.ListCustomerByName("Ogwal");
+		CustomerDTO customerDTO = customers.get(0);
+		Assert.assertEquals("Ogwal David",customerDTO.getName());
+	}
+
+	@Test
+	public void validatePhoneTestSucess(){
+		List<CustomerDTO> customers= customerService.ListCustomerByPhone("(256) 714660221");
+		CustomerDTO customerDTO = customers.get(0);
+		Assert.assertEquals("Daniel Makori",customerDTO.getName());
+		Assert.assertEquals("(256) 714660221",customerDTO.getPhone());
+		Assert.assertEquals("Uganda",customerDTO.getCountry());
+	}
+
+	@Test
+	public void validateCountryTestSucess(){
+		List<CustomerDTO> customers= customerService.ListAllCustomerByCountry("Uganda");
+		CustomerDTO customerDTO = customers.get(2);
+		Assert.assertEquals(3,customers.size());
+		Assert.assertEquals("Daniel Makori",customerDTO.getName());
+		Assert.assertEquals("(256) 714660221",customerDTO.getPhone());
+		Assert.assertEquals("Uganda",customerDTO.getCountry());
 	}
 }
