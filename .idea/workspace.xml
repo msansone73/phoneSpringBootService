@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="678e1d56-f86f-43ac-86f5-d4e74ca76dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/WebController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/react-phones/src/components/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/react-phones/src/components/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/msansone/test/phoneSpringBootService/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.34de6062.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.34de6062.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/2.ce4a2aa4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/2.ce4a2aa4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.c122eb27.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.c122eb27.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/precache-manifest.8ad6aef204ce655f38ce276ad7f01628.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/css/main.34de6062.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/css/main.34de6062.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/2.ce4a2aa4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/2.ce4a2aa4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/main.c122eb27.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/main.c122eb27.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.34de6062.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.34de6062.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/2.ce4a2aa4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/2.ce4a2aa4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.c122eb27.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.c122eb27.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
