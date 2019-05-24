@@ -41,11 +41,21 @@ class Body extends Component{
                 <table>
                     <tbody>
                     <tr>
-                        <td>Search: 
-                            <input value={this.state.textbox}
-                            onChange={this.changeTextBox}></input> 
+                        <td>
+                            <div className="input-group input-group-sm mb-3">
+                            <div className="input-group-prepend">
+                                <span className="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                            </div>
+                            <input  value={this.state.textbox} 
+                                    onChange={this.changeTextBox} 
+                                    type="text" 
+                                    className="form-control" 
+                                    aria-label="Sizing example input" 
+                                    aria-describedby="inputGroup-sizing-sm">
+                            </input>
+                            </div>
                             
-                            </td>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -53,17 +63,23 @@ class Body extends Component{
                     <tbody>
                     <tr>
                         <td> 
-                            <button value='country' onClick={this.searchByCountry}> by Country</button>
-                            <button value='name' onClick={this.searchByCountry}> by Name</button>
-                            <button value='phone' onClick={this.searchByCountry}> by Phone</button>
-                            <button value='clean' onClick={this.searchByCountry}> Clean</button>
+                            <button className="btn btn-secondary btn-sm" value='country' onClick={this.searchByCountry}> by Country</button> 
+                        </td>
+                        <td>
+                            <button className="btn btn-secondary btn-sm" value='name' onClick={this.searchByCountry}> by Name</button> 
+                        </td>
+                        <td>
+                            <button className="btn btn-secondary btn-sm" value='phone' onClick={this.searchByCountry}> by Phone</button> 
+                        </td>
+                        <td>
+                            <button className="btn btn-secondary btn-sm" value='clean' onClick={this.searchByCountry}> Clean</button>
                             </td>
                     </tr>
                     </tbody>
                 </table>
                 <br></br>
 
-                <table>
+                <table  className="table">
                 <thead>
                     <tr>
                     <th>Id</th>

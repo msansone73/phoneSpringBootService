@@ -23,7 +23,7 @@ public class CustomerDTOUtil {
 
         return StreamSupport.stream(customers.spliterator(), false)
                 .map(c-> new CustomerDTO(c))
-                .filter(c -> c.getCountry().contains(country))
+                .filter(c -> c.getCountry().toUpperCase().contains(country.toUpperCase()))
                 .collect(Collectors.toList());
     }
 
@@ -31,7 +31,7 @@ public class CustomerDTOUtil {
 
         return StreamSupport.stream(customers.spliterator(), false)
                 .map(c-> new CustomerDTO(c))
-                .filter(c -> c.getPhone().contains(phone))
+                .filter(c -> c.getPhone().toUpperCase().contains(phone.toUpperCase()))
                 .collect(Collectors.toList());
     }
 
@@ -39,7 +39,7 @@ public class CustomerDTOUtil {
 
         return StreamSupport.stream(customers.spliterator(), false)
                 .map(c-> new CustomerDTO(c))
-                .filter(c -> c.getName().contains(name))
+                .filter(c -> c.getName().toUpperCase().contains(name.toUpperCase()))
                 .collect(Collectors.toList());
     }
 

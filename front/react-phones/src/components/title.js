@@ -3,7 +3,9 @@ import  React, {Component} from 'react'
 class Tittle extends Component{
     render(){
         return (
-            <p>Phone List</p>
+            <div className="span6">
+                    <h1 className="muted">Phone List</h1>
+            </div>
         )
     }
 }

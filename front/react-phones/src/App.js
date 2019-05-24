@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import './components/title'
 import Tittle from './components/title'
 import Body from './components/body'
