@@ -22,11 +22,13 @@ Both layers were separated into different dock containers, the docker-compose st
 2 - Java build
 
 `$ cd phoneSpringBootService
+
 $ mvn clean install`
 
 3 - Start service with docker compose
 
 `$ docker-compose build
+
 $ docker-compose up`
 
 
