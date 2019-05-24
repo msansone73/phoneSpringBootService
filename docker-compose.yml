@@ -1,0 +1,11 @@
+version: '3'
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+
+  web:
+    build: ./front/react-phones
+    ports:
+      - "80:3000"
