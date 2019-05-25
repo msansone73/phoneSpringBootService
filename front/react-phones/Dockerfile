@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-RUN yarn run build
+RUN yarn
 
 CMD ["npm","start"]
 
