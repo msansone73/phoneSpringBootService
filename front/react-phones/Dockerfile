@@ -8,8 +8,7 @@ WORKDIR /usr/src/app
 
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-RUN npm install --silent
-RUN npm install react-scripts@3.0.1 -g --silent
+RUN yarn run build
 
 CMD ["npm","start"]
 
